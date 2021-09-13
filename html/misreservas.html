@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Proyecto WEB-Reservas</title>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div id="header">            
+        </div>
+        <div id="nav">
+            <hr>
+            <center>
+                <h3>
+                    <a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;
+                    <a href="buscarRegistrado.html">Buscar</a> &nbsp;&nbsp;&nbsp;
+                    <a href="misreservas.html">Mi Reserva</a> &nbsp;&nbsp;&nbsp;
+                    <a href="perfil.html">Mi Perfil</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="../inicio.html">Cerrar sesión</a> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="../imagenes/usuario.jpg" alt="Usuario" width="50px" height="50px"> Usuario                    
+                </h3>                
+            </center>
+        </div>
+        <div id="contenido">
+            <hr>
+            <center><h2><b>Mi Reserva</b></h2></center>
+            <div id="section">
+                <center>
+                    <form action="" name="frmMiReserva">
+                        <p><h1>Haga su reserva de la habitacion en minutos</h1></p>
+                        <p>
+                            <label for="guestname" class="field-label">por favor Ingrese Su Nombre:
+                                <input type="text" name="nombre" id="guestname" class="gui-input" required="" placeholder="Juan perez">
+                            </label>                        
+                        </p>
+                        <p>
+                        <label for="guestemail" class="field-label">Direccion de Correo Electronico:
+                            <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="ejemplo@gmail.com">
+                        </label>                        
+                        </p>
+                        <p>
+                            <label for="guestelephone" class="field-label">Telefono / Celular:
+                                <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Numero de telefono / Celular">
+                            </label>                    
+                        </p>
+                        <p>
+                            <label for="adults" class="field-label">Numeros de Adultos:
+                                <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Numeros de Adultos">
+                            </label>                        
+                        </p>
+                        <p>
+                            <label for="children" class="field-label">Numero de Niños:
+                                <input type="number" id="children" name="children" class="gui-input" required="" placeholder="Numero de Niños">
+                            </label>                        
+                        </p>
+                        <p>
+                            <label for="checkin" class="field-label">Fecha de Entrada:
+                                <input type="text" id="checkin" name="checkin" class="gui-input" required="" placeholder="dd/mm/yyyy">
+                            </label>                        
+                        </p>
+                        <p>
+                            <label for="checkout" class="field-label">Fecha de Salida:
+                                <input type="text" id="checkout" name="checkout" class="gui-input" required="" placeholder="dd/mm/yyyy">                                
+                            </label>                        
+                        </p>
+                        
+                        <div class="tagline"><span>por favor responda estas preguntas para una estadia placentera:</span></div>
+                        <p>
+                            ¿va a traer una Mascota?<br>
+                            <input type="radio" name="mascota" value="si">SI
+                            <input type="radio" name="mascota" value="no">NO
+                        </p>
+                        <p>
+                            ¿Necesita que lo recojamos?<br>
+                            <input type="radio" name="recoger" value="si">SI
+                            <input type="radio" name="recoger" value="no">NO
+                        </p>
+
+                        <p><label for="comment" class="field-label">¿Algo mas que debamos saber?</label></p>
+                        <textarea name="commentario" cols="35" rows="6" placeholder="Haganos saber sobre cualquier necesidad de alojamiento especial"></textarea>
+                        <br>
+                        <strong>Por favor:</strong> sea lo mas descriptivo posible.
+                        <p>
+                            <button type="submit" class="button btn-primary">Confirmar Reserva</button>
+                            <button type="reset" class="button ">Cancelar</button>
+                        </p>                         
+                    </form>
+                </center>
+            </div>
+        </div>
+        <div id="footer">
+            <hr>
+            <center>
+                <b> © 2021 | TEAM 3 - GRUPO 05 - DESARROLLO DE SOFTWARE | MISIÓNTIC 2022</b> <br>
+                <b>TODOS LOS DERECHOS RESERVADOS</b>
+            </center>
+        </div>
+    </div> 
+</body>
+</html>
