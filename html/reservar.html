@@ -15,12 +15,10 @@
             <hr>
             <center>
                 <h3>
-                    <a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;
-                    <a href="buscarRegistrado.html">Buscar</a> &nbsp;&nbsp;&nbsp;
-                    <a href="misreservas.html">Mi Reserva</a> &nbsp;&nbsp;&nbsp;
-                    <a href="perfil.html">Mi Perfil</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="../inicio.html">Cerrar sesión</a> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="../imagenes/usuario.jpg" alt="Usuario" width="50px" height="50px"> Usuario                    
+                    <a href="../inicio.html">Inicio</a> &nbsp;&nbsp;&nbsp;
+                    <a href="buscar.html">Buscar</a> &nbsp;&nbsp;&nbsp;
+                    <a href="ingreso.html">Ingresar</a> &nbsp;&nbsp;&nbsp;
+                    <a href="registro.html">Registrarse</a> &nbsp;&nbsp;&nbsp;                    
                 </h3>                
             </center>
         </div>
@@ -32,8 +30,18 @@
                     <form action="" name="frmMiReserva">
                         <p><h1>Haga su reserva de la habitacion en minutos</h1></p>
                         <p>
-                            <label for="guestname" class="field-label">por favor Ingrese Su Nombre:
-                                <input type="text" name="nombre" id="guestname" class="gui-input" required="" placeholder="Juan perez">
+                            <label for="guestdoc" class="field-label">Por favor, Ingrese su documento de identidad:
+                                <input type="text" name="txtDocId" id="guestname" class="gui-input" required="" placeholder="1111111111">
+                            </label>                        
+                        </p>
+                        <p>
+                            <label for="guestname" class="field-label">Ingrese sus Nombres:
+                                <input type="text" name="nombre" id="guestname" class="gui-input" required="" placeholder="Juan">
+                            </label>                        
+                        </p>
+                        <p>
+                            <label for="guestapel" class="field-label">Ingrese sus Apellidos:
+                                <input type="text" name="apellidos" id="guestname" class="gui-input" required="" placeholder="Perez">
                             </label>                        
                         </p>
                         <p>
@@ -44,6 +52,16 @@
                         <p>
                             <label for="guestelephone" class="field-label">Telefono / Celular:
                                 <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Numero de telefono / Celular">
+                            </label>                    
+                        </p>
+                        <p>
+                            <label for="guescontrasena1" class="field-label">Contraseña:
+                                <input type="password" name="contrasena1" id="guestelephone" class="gui-input" required="" placeholder="">
+                            </label>                    
+                        </p>
+                        <p>
+                            <label for="guescontrasena2" class="field-label">Confirmar contraseña:
+                                <input type="password" name="contrasena2" id="guestelephone" class="gui-input" required="" placeholder="">
                             </label>                    
                         </p>
                         <p>
@@ -65,8 +83,7 @@
                             <label for="checkout" class="field-label">Fecha de Salida:
                                 <input type="text" id="checkout" name="checkout" class="gui-input" required="" placeholder="dd/mm/yyyy">                                
                             </label>                        
-                        </p>
-                        
+                        </p>                        
                         <div class="tagline"><span>por favor responda estas preguntas para una estadia placentera:</span></div>
                         <p>
                             ¿va a traer una Mascota?<br>
@@ -78,7 +95,6 @@
                             <input type="radio" name="recoger" value="si">SI
                             <input type="radio" name="recoger" value="no">NO
                         </p>
-
                         <p><label for="comment" class="field-label">¿Algo mas que debamos saber?</label></p>
                         <textarea name="commentario" cols="35" rows="6" placeholder="Haganos saber sobre cualquier necesidad de alojamiento especial"></textarea>
                         <br>

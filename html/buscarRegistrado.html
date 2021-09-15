@@ -14,12 +14,18 @@
             <hr>
             <center>
                 <h3>
-                    <a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;
-                    <a href="buscarRegistrado.html">Buscar</a> &nbsp;&nbsp;&nbsp;
-                    <a href="misreservas.html">Mi Reserva</a> &nbsp;&nbsp;&nbsp;
-                    <a href="perfil.html">Mi Perfil</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="../inicio.html">Cerrar sesión</a> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <img src="../imagenes/usuario.jpg" alt="Usuario" width="50px" height="50px"> Usuario                    
+                    <table align="center">
+                        <tr>
+                            <td align="right"><a href="index.html">Inicio</a> &nbsp;&nbsp;&nbsp;</td>
+                            <td align="right"><a href="buscarRegistrado.html">Buscar</a> &nbsp;&nbsp;&nbsp;</td>
+                            <td align="right"><a href="historalReservas.html">Mis Reserva</a> &nbsp;&nbsp;&nbsp;</td>
+                            <td align="right"><a href="perfil.html">Mi Perfil</a> &nbsp;&nbsp;&nbsp;</td>
+                            <td align="right"><a href="sitiosTuristicos.html">Sitios Turísticos</a> &nbsp;&nbsp;&nbsp;</td>
+                            <td align="right"><a href="../inicio.html">Cerrar sesión</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</td>
+                            <td align="right"><img src="../imagenes/usuario.jpg" alt="Usuario" width="45px" height="45px"></td>
+                            <td align="left">Nombre Usuario</td>                            
+                        </tr>
+                    </table>
                 </h3>                
             </center>
         </div>
@@ -87,14 +93,22 @@
             </div>
             <div id="resultados">
                 <hr>
-                <center><h2><b>Resultados</b></h2></center>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima nulla quisquam illum, iusto, delectus nobis voluptatem voluptatibus dignissimos maxime at iure cupiditate recusandae, dolore officiis laboriosam officia impedit distinctio!
-                    </p>                    
-                    <p>
-                        <input type="submit" name="btnReservar" value="Reservar">
-                    </p>
-                
+                <center><h2><b>Resultados</b></h2></center>    
+                <br>
+                <form action="reservarRegistrado.html">
+                    <b>Hotel:</b> &nbsp;&nbsp; XXXXXXXXXXXXX &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Dirección:</b> &nbsp;&nbsp; XXXXXXXXXXXXX &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Teléfono:</b> &nbsp;&nbsp; ########## &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Estrellas:</b> &nbsp;&nbsp; # &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Tipo de habitaciön:</b> &nbsp;&nbsp; XXXXXXXXXXXXX &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Habitaciön No.:</b> &nbsp;&nbsp; XXX <br>
+                    <b>Piso:</b> &nbsp;&nbsp; ########## &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Capacidad:</b> &nbsp;&nbsp; ## &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Minibar:</b> &nbsp;&nbsp; XX &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Precio:</b> &nbsp;&nbsp; ########## &nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                    <center><input type="submit" name="btnReservar" value="Reservar"></center>             
+                </form>
             </div>
         </div>
         <div id="footer">
