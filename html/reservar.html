@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="../css/estilo.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Proyecto WEB-Reservas</title>
     
 </head>
 <body>
-    <div id="contenedor">
+    <div class="container-fluid mt-1">
         <div id="header">
             <img class="hotel" src="../imagenes/city-36593_1280.png"alt="">   
             <div class="menu">
@@ -23,95 +24,121 @@
                 </div> 
             </div>
         </div>
-        <div id="contenido">
+        <div class="container">
             <hr>
-            <center><h2><b>Mi Reserva</b></h2></center>
-            <div id="section">
-                <center>
-                    <form action="" name="frmMiReserva">
-                        <p><h1>Haga su reserva de la habitacion en minutos</h1></p>
-                        <p>
-                            <label for="guestdoc" class="field-label">Por favor, Ingrese su documento de identidad:
-                                <input type="text" name="txtDocId" id="guestname" class="gui-input" required="" placeholder="1111111111">
-                            </label>                        
-                        </p>
-                        <p>
-                            <label for="guestname" class="field-label">Ingrese sus Nombres:
-                                <input type="text" name="nombre" id="guestname" class="gui-input" required="" placeholder="Juan">
-                            </label>                        
-                        </p>
-                        <p>
-                            <label for="guestapel" class="field-label">Ingrese sus Apellidos:
-                                <input type="text" name="apellidos" id="guestname" class="gui-input" required="" placeholder="Perez">
-                            </label>                        
-                        </p>
-                        <p>
-                        <label for="guestemail" class="field-label">Direccion de Correo Electronico:
-                            <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="ejemplo@gmail.com">
-                        </label>                        
-                        </p>
-                        <p>
-                            <label for="guestelephone" class="field-label">Telefono / Celular:
-                                <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Numero de telefono / Celular">
-                            </label>                    
-                        </p>
-                        <p>
-                            <label for="guescontrasena1" class="field-label">Contraseña:
-                                <input type="password" name="contrasena1" id="guestelephone" class="gui-input" required="" placeholder="">
-                            </label>                    
-                        </p>
-                        <p>
-                            <label for="guescontrasena2" class="field-label">Confirmar contraseña:
-                                <input type="password" name="contrasena2" id="guestelephone" class="gui-input" required="" placeholder="">
-                            </label>                    
-                        </p>
-                        <p>
-                            <label for="adults" class="field-label">Numeros de Adultos:
-                                <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Numeros de Adultos">
-                            </label>                        
-                        </p>
-                        <p>
-                            <label for="children" class="field-label">Numero de Niños:
-                                <input type="number" id="children" name="children" class="gui-input" required="" placeholder="Numero de Niños">
-                            </label>                        
-                        </p>
-                        <p>
-                            <label for="checkin" class="field-label">Fecha de Entrada:
-                                <input type="text" id="checkin" name="checkin" class="gui-input" required="" placeholder="dd/mm/yyyy">
-                            </label>                        
-                        </p>
-                        <p>
-                            <label for="checkout" class="field-label">Fecha de Salida:
-                                <input type="text" id="checkout" name="checkout" class="gui-input" required="" placeholder="dd/mm/yyyy">                                
-                            </label>                        
-                        </p>                        
-                        <div class="tagline"><span>por favor responda estas preguntas para una estadia placentera:</span></div>
-                        <p>
-                            ¿va a traer una Mascota?<br>
-                            <input type="radio" name="mascota" value="si">SI
-                            <input type="radio" name="mascota" value="no">NO
-                        </p>
-                        <p>
-                            ¿Necesita que lo recojamos?<br>
-                            <input type="radio" name="recoger" value="si">SI
-                            <input type="radio" name="recoger" value="no">NO
-                        </p>
-                        <p><label for="comment" class="field-label">¿Algo mas que debamos saber?</label></p>
-                        <textarea name="commentario" cols="35" rows="6" placeholder="Haganos saber sobre cualquier necesidad de alojamiento especial"></textarea>
-                        <br>
-                        <strong>Por favor:</strong> sea lo mas descriptivo posible.
-                        <p>
-                            <button type="submit" class="button btn-primary">Confirmar Reserva</button>
-                            <button type="reset" class="button ">Cancelar</button>
-                        </p>                         
-                    </form>
-                </center>
+            <h1 class="text-center"><b>Mi Reserva</b></h1>
+            <h2 class="text-center p-4" ><b>Haga su reserva de la habitacion en minutos</b></h2>
+            <div class="section">                
+                    <form action="" class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Ingrese su Nombres Completo:</label>
+                                        <input type="text" class="form-control" required="" placeholder="Juan Perez">
+                                    </p>                                                 
+                                </div>                    
+                                <div class="form-group row col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Por favor, Ingrese su documento de identidad:</label>  
+                                        <input type="text" class="form-control" required="" placeholder="000000000">                                                      
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Direccion de Correo Electronico:</label> 
+                                        <input type="email" class="form-control" required="" placeholder="ejemplo@gmail.com">
+                                    </p>
+                                </div>
+                                <div class="form-group col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Telefono / Celular:</label> 
+                                        <input type="text" class="form-control" required="" placeholder="Numero de telefono / Celular">                                                   
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Contraseña:</label> 
+                                        <input type="password" class="form-control" required="" placeholder="ingrese contraseña">                                                   
+                                    </p>
+                                </div> 
+                                <div class="form-group col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Confirmar contraseña:</label>    
+                                        <input type="password" class="form-control" required="" placeholder="confirme contraseña">                                                
+                                    </p>
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <div class="form-goup col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Numeros de Adultos:</label> 
+                                        <input type="number" class="form-control" required="" placeholder="Numeros de Adultos">                                                       
+                                    </p>
+                                </div> 
+                                <div class="form-group col-6">
+                                    <p>
+                                       <label for="" class="col-form-label">Numero de Niños:</label> 
+                                       <input type="number" class="form-control" required="" placeholder="Numero de Niños">                                                       
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row"> 
+                                <div class="form-group col-6">
+                                    <p>
+                                       <label for="" class="col-form-label">Fecha de Entrada:</label>  
+                                       <input type="text" class="form-control" required="" placeholder="dd/mm/yyyy">                                                      
+                                    </p>
+                                </div> 
+                                <div class="form-group col-6">
+                                    <p>
+                                        <label for="" class="col-form-label">Fecha de Salida:</label>
+                                        <input type="text" class="form-control"required="" placeholder="dd/mm/yyyy">                                                                                  
+                                    </p> 
+                                </div> 
+                            </div>                                                                    
+                            <div class="justify-content-center text-center p-4"><span>por favor responda estas preguntas para una estadia placentera:</span></div>
+                            <div class="row">
+                                <div class="form-group col-6 justify-content-center">
+                                    <p>
+                                        ¿va a traer una Mascota?<br>
+                                        <input type="radio" name="mascota" value="si">SI
+                                        <input type="radio" name="mascota" value="no">NO
+                                    </p>
+                                </div>
+                                <div class="form-group col-6 justify-content-center">
+                                    <p>
+                                        ¿Necesita que lo recojamos?<br>
+                                        <input type="radio" name="recoger" value="si">SI
+                                        <input type="radio" name="recoger" value="no">NO
+                                    </p>
+                                </div>
+                            </div>                           
+                            <div class="form-group">
+                                <p><label for="comment" class="field-label">¿Algo mas que debamos saber?</label></p>
+                                <textarea class="form-control" name="commentario" cols="35" rows="6" placeholder="Haganos saber sobre cualquier necesidad de alojamiento especial"></textarea>
+                                <strong>Por favor:</strong> sea lo mas descriptivo posible.
+                            </div>
+                            <div class="form-group">
+                                <br>
+                                <p>
+                                    <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                                    <button type="reset" class="btn btn-danger">Cancelar</button>
+                                </p> 
+                            </div>
+                        </div>                                                     
+                    </form>            
             </div>
-        </div>
-        <div id="footer">
-            <span> © 2021 | TEAM 3 - GRUPO 05 - DESARROLLO DE SOFTWARE | MISIÓNTIC 2022</span><br>
-            <span>TODOS LOS DERECHOS RESERVADOS</span>
-        </div>
+            <hr>
+            <footer class="text-center p-3">
+                <span> © 2021 | TEAM 3 - GRUPO 05 - DESARROLLO DE SOFTWARE | MISIÓNTIC 2022</span><br>
+                <span>TODOS LOS DERECHOS RESERVADOS</span>
+            </footer>            
+        </div>        
     </div> 
 </body>
 </html>
