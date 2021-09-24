@@ -13,9 +13,14 @@ class CreateHotelesTable extends Migration
             $table->id();
             $table->string('nombre',50);
             $table->string('ciudad',50);
-            $table->tinyinteger('estrellas');
             $table->string('telefono',14);
-            $table->string('direccion',50);
+            $table->string('direccion',50)->unique();
+            $table->tinyinteger('estrellas');
+            $table->boolean('piscina');
+            $table->boolean('gimnasio');
+            $table->boolean('spa');
+            $table->boolean('restaurante');
+            
         });
     }
 

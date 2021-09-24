@@ -13,9 +13,15 @@ class CreateReservasTable extends Migration
             $table->id();
             $table->string('doc_cliente',10);
             $table->foreignId('id_habitacion');
-            $table->date('fecha_inicio');
-            $table->date('fecha_fin');
-            $table->tinyInteger('huespedes');
+            $table->tinyInteger('cant_adultos');
+            $table->tinyInteger('cant_ninos');
+            $table->boolean('mascota');
+            $table->boolean('recogida');
+            $table->date('fecha_ingreso');
+            $table->date('fecha_salida');
+            $table->string('com_ingreso',200);
+            $table->tinyInteger('calificacion');
+            $table->string('com_salida',200);
 
             $table->foreign('doc_cliente')->references('doc')->on('clientes');
             $table->foreign('id_habitacion')->references('id')->on('habitaciones');
