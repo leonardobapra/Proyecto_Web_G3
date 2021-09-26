@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estiloPerfil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Proyecto WEB-Perfil</title>
 </head>
 <body>
     <div id="contenedor">        
         <div id="header">
-            <img class="hotel" src="../imagenes/city-36593_1280.png"alt="">   
+            <img class="hotel" src="../imagenes/LogoSANRES.png"alt="">   
             <div class="menu">
                 <div id="nav"> 
                     <ul>
@@ -26,39 +28,34 @@
                 </div> 
             </div>
         </div>  
-        <div id="contenido">
-            <hr>
-            <center><h2><b>Mi Perfil</b></h2></center>
-            <div id="section">
-                <center>
+        <div class="col">
+            <h2 class= text-center pt-5 mb-5><b>Mi Perfil</b></h2>
                     <form action="" name="frmMiPerfil">
-                        <p>
-                            <label">Correo: 
-                                <input type="email" name="txtCorreo" id="" placeholder="ejemplo@mail.com"> 
+                        <div class="mb-3 text-center">
+                            <label for="email" class="form-label">Correo Electronico
+                                <input type="email" class="form-control"  name="email" id="" placeholder="ejemplo@mail.com"> 
                             </label>
-                        </p>
-                        <p>
-                            <label>Contraseña Actual: 
-                                <input type="password" name="" id="" placeholder="Contraseña Actual">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label for="password" class="form-label">Contraseña Actual
+                                <input type="password" class="form-control" name="password" id="" placeholder="Contraseña Actual">
                             </label>
-                        </p>
-                        <p>
-                            <label>Nueva Contraseña: 
-                                <input type="password" name="" id="" placeholder="Contraseña Nueva">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label for="password" class="form-label">Nueva Contraseña
+                                <input type="password" class="form-control" name="" id="" placeholder="Contraseña Nueva">
                             </label>
-                        </p>
-                        <p>
-                            <label>Confirmar Nueva Contraseña: 
-                                <input type="password" name="" id="" placeholder="Confirmar Nueva Contraseña">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label for="password" class="form-label">Confirmar Nueva Contraseña
+                                <input type="password" class="form-control" name="" id="" placeholder="Confirmar Nueva Contraseña">
                             </label>
-                        </p>
-                        <p>
-                            <input type="reset" name="" id="" value="Cancelar">
-                            <input type="submit" name="btnActualizar" value="Actualizar">
-                        </p>     
+                        </div>   
+                        <div class="text-center">
+                            <input type="reset" class="btn btn-danger" name="" id="" value="Cancelar">
+                            <input type="submit" class="btn btn-primary" name="btnActualizar" value="Actualizar">
+                        </div>    
                     </form>
-                </center>
-            </div>
         </div>
         <div id="footer">
             <span> © 2021 | TEAM 3 - GRUPO 05 - DESARROLLO DE SOFTWARE | MISIÓNTIC 2022</span><br>
