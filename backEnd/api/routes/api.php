@@ -19,4 +19,12 @@ use App\Http\Controllers\ClienteController;
 //     return $request->user();
 // });
 
-Route::get('/Cliente',[ClienteController::class,'showAll']);
+// Route::get('/Cliente',[ClienteController::class,'showAll']);
+
+Route::post('/Cliente/signup', [ClienteController::class, 'signup']);
+
+Route::post('/Cliente/login', [ClienteController::class, 'login']);
+
+Route::get('/Habitacion/search', [HabitacionController::class, 'search']);
+
+Route::get('/Habitacion/filter', [HabitacionController::class, 'filter']);
