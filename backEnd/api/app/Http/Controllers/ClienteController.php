@@ -7,6 +7,7 @@ use App\Models\Cliente;
 
 class ClienteController extends Controller
 {
+
     public function signup(Request $request){
         Cliente::create($request->all());
     }
@@ -37,15 +38,13 @@ class ClienteController extends Controller
         }
         return array('token' => $token);
     }
-    
-
 
     // public function update(Request $request){​
         
     // }
 
+
     // public function showAll(){
     //     return Cliente::all();
     // }
-
 }

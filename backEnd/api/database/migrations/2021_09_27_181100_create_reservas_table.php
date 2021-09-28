@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateReservasTable extends Migration
 {
-
     public function up()
     {
         Schema::create('reservas', function (Blueprint $table) {
